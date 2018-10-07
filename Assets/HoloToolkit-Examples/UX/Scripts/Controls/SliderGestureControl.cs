@@ -31,7 +31,7 @@ namespace HoloToolkit.Examples.InteractiveElements
         /// </summary>
         public float SliderValue
         {
-            private set
+            set
             {
                 if (mSliderValue != value)
                 {
@@ -94,7 +94,7 @@ namespace HoloToolkit.Examples.InteractiveElements
 
             SliderBar.transform.rotation = Quaternion.identity;
 
-            // set the width of the slider 
+            // set the width of the slider
             mSliderMagnitude = SliderBar.transform.InverseTransformVector(SliderBar.GetComponent<Renderer>().bounds.size).x;
 
             // set the center position
